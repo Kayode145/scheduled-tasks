@@ -13,8 +13,8 @@ import  pandas
 import random
 import datetime as dt
 
-EMAIL = "mjude14589@gmail.com"
-PASSWORD = "hpxxggcxefvlwzga"
+EMAIL = os.environ.get("mjude14589@gmail.com")
+PASSWORD = os.environ.get("hpxxggcxefvlwzga")
 
 
 birthday_data = pandas.read_csv("birthdays.csv")
