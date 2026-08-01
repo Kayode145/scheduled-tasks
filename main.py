@@ -13,8 +13,8 @@ import  pandas
 import random
 import datetime as dt
 
-EMAIL = os.environ.get("mjude14589@gmail.com")
-PASSWORD = os.environ.get("hpxxggcxefvlwzga")
+EMAIL = "mjude14589@gmail.com"
+PASSWORD = "hpxxggcxefvlwzga"
 
 
 birthday_data = pandas.read_csv("birthdays.csv")
@@ -37,3 +37,4 @@ for index,row in birthday_data.iterrows():
                 to_addrs=row["email"],
                 msg=f"Subject:Happy Birthday!\n\n{letter_to_send}"
             )
+
