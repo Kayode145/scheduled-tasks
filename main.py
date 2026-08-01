@@ -22,8 +22,6 @@ birthday_data = pandas.read_csv("birthdays.csv")
 date = dt.datetime
 day = date.now().day
 month = date.now().month
-print(day)
-print(month)
 
 for index,row in birthday_data.iterrows():
     if row["day"] == day:
